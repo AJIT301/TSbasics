@@ -1,0 +1,26 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+.wrapper {
+  max-width: 1280px;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+  border: 2px solid #d89415;
+  border-radius: 16px;
+  background: linear-gradient(to bottom, rgba(0, 91, 187, 0.15) 40%, rgba(255, 213, 0, 0.15) 60%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-family: system-ui, sans-serif;
+}
+
+.wrapper legend {
+  padding: 0 1rem;
+  font-size: 0.618rem;
+  font-weight: 500;
+  color: #fff;
+}

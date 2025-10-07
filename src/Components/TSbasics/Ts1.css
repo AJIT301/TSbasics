@@ -1,0 +1,51 @@
+.container {
+    min-width: 600px;
+    min-height: 500px;
+    max-width: 600px;
+    max-height: 80vh;
+    border: 2px solid rgb(0, 87, 183);
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container legend {
+    padding: 0 1rem;
+    font-size: 0.618rem;
+    color: #fff;
+
+}
+
+.nested-container {
+    min-width: 250px;
+    min-height: 200px;
+    max-width: 250px;
+    max-height: 200px;
+    border: 2px solid rgb(255, 215, 0);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.hello {
+    max-width: 500px;
+    border: 1px solid rgb(255, 215, 0);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+h1 {
+    font-size: 1.618rem;
+}
+
+p {
+    font-size: 1rem;
+}
