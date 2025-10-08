@@ -1,22 +1,27 @@
-// translations.ts
-
 // src/translations.ts
-type Language = 'EN' | 'LT';
-type TranslationKeys = 'greeting' | 'paragraph';
 
-type TranslationsType = {
+export type Language = 'EN' | 'NL' | 'LT' | 'UA';
+export type TranslationKeys = 'greeting' | 'paragraph';
+
+export type TranslationsType = {
     [K in TranslationKeys]: {
         [L in Language]: string
     }
 };
 
-export const translations: TranslationsType = {
+const translations: TranslationsType = {
     greeting: {
         EN: "Hello, welcome to our site",
-        LT: "Sveikas, sveiki atvykę į mūsų svetainę"
+        LT: "Sveiki atvykę į mūsų svetainę",
+        NL: "Hallo, welkom op onze site",
+        UA: "Привіт, це наш сайт"
     },
     paragraph: {
         EN: "This is a sample paragraph in English.",
-        LT: "Tai pavyzdinis pastraipos tekstas lietuvių kalba."
+        LT: "Tai pavyzdinis pastraipos tekstas lietuvių kalba.",
+        NL: "Dit is een voorbeeldtekst in het Nederlands.",
+        UA: "Це є прикладний параграф українською мовою."
     }
-}; // optional: makes keys readonly
+};
+
+export default translations;

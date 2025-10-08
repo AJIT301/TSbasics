@@ -20,8 +20,6 @@
 }
 
 .nested-container {
-    min-width: 250px;
-    min-height: 200px;
     max-width: 250px;
     max-height: 200px;
     border: 2px solid rgb(255, 215, 0);
@@ -30,9 +28,17 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
     margin: 0.5rem;
     padding: 0.5rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.nested-container legend {
+
+    padding: 2px 6px;
+    border-radius: 3px;
+
 }
 
 .hello {
@@ -44,8 +50,10 @@
 
 h1 {
     font-size: 1.618rem;
+    z-index: 1;
 }
 
 p {
     font-size: 1rem;
+    z-index: 1;
 }
