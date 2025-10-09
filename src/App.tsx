@@ -1,18 +1,21 @@
 // App.tsx
+import { useContext } from 'react';
+import { LanguageProvider } from './Components/Context/LanguageProvider'
+import { LanguageContext } from './Components/Context/LanguageContext';
+import { wrapperClasses } from './Components/TSbasics/flags';
 import './App.css';
 import LanguageSelector from './Components/Navbar/Navbar';
 import Hello from './Components/TSbasics/Ts1';
-import { LanguageProvider } from './Components/Context/LanguageProvider'
-import { useContext } from 'react';
-import { LanguageContext } from './Components/Context/LanguageContext';
-import { wrapperClasses } from './Components/TSbasics/flags';
+
 
 function AppContent() {
   const { language } = useContext(LanguageContext);
 
   return (
     <>
-      <LanguageSelector />
+      <header className="language-selector">
+        <LanguageSelector />
+      </header>
 
       <fieldset className={`wrapper ${wrapperClasses[language]}`}>
         <legend>Wrapper Container</legend>

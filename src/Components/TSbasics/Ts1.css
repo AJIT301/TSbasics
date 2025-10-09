@@ -3,7 +3,7 @@
     min-height: 500px;
     max-width: 600px;
     max-height: 80vh;
-    border: 2px solid rgb(0, 87, 183);
+    border: none;
     border-radius: 10px;
     display: flex;
     align-items: flex-start;

@@ -1,19 +1,21 @@
 .lang-selector {
-    position: relative;
-    display: inline-block;
     font-family: system-ui, sans-serif;
     z-index: 10;
+    position: relative;
 }
 
 .lang-toggle {
-    background: #1a1a1a;
-    color: #fff;
+    background: #525050;
+    color: #d18717;
     padding: 0.5rem 1rem;
-    border: 2px solid #646cff;
+    border: 2px solid #e4a41b;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
     z-index: 11;
+    width: 100px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .lang-toggle:hover {
@@ -22,11 +24,10 @@
 
 .lang-menu {
     position: absolute;
-    top: 110%;
+    top: 100%;
     left: 0;
     width: 100%;
     background: #1a1a1a;
-    border: 1px solid #646cff;
     border-radius: 10px;
     overflow: hidden;
     max-height: 0;
@@ -42,12 +43,12 @@
     padding: 0.5rem;
     border: none;
     background: transparent;
-    color: white;
+    color: rgb(197, 120, 18);
     text-align: center;
     cursor: pointer;
 }
 
 .lang-option:hover,
 .lang-option.active {
-    background-color: #646cff33;
+    background-color: #3dd10c33;
 }
