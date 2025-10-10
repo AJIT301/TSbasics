@@ -9,6 +9,7 @@
   justify-content: flex-end;
   min-height: 45px;
   /* Reserves space for the selector */
+  flex-wrap: wrap;
 }
 .wrapper {
   max-width: 1280px;
@@ -62,4 +63,16 @@
 
     z-index: -2;
 
+}
+
+/* Mobile responsiveness for navbar alignment */
+@media (max-width: 768px) {
+    .language-selector {
+        padding: 0 2rem;
+    }
+    .wrapper,
+    .wrapper legend {
+        padding: 0;
+
+    }
 }

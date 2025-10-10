@@ -14,8 +14,18 @@
     transition: 0.3s;
     z-index: 11;
     width: 100px;
+    height: 40px;
     text-align: center;
     box-sizing: border-box;
+}
+
+/* Mobile responsiveness (screens up to 768px) */
+@media (max-width: 768px) {
+    .lang-toggle {
+        width: fit-content;
+        padding: 0.8rem 0.6rem;
+        font-size: 0.8rem;
+    }
 }
 
 .lang-toggle:hover {
@@ -51,4 +61,33 @@
 .lang-option:hover,
 .lang-option.active {
     background-color: #3dd10c33;
+}
+
+.flag-toggle {
+    background: #525050;
+    color: #d18717;
+    padding: 0.5rem 1rem;
+    border: 2px solid #e4a41b;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 11;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.flag-toggle:hover {
+    background: #2c2c2c;
+}
+
+.flag-toggle.active {
+    opacity: 1;
+    filter: none;
+}
+
+.flag-toggle.inactive {
+    opacity: 0.5;
+    /* filter: blur(0px); */
 }

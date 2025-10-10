@@ -1,7 +1,9 @@
+/* Responsive container */
 .container {
-    min-width: 600px;
-    min-height: 500px;
+    width: 90vw;
+    min-width: 320px;
     max-width: 600px;
+    min-height: 500px;
     max-height: 80vh;
     border: none;
     border-radius: 10px;
@@ -10,6 +12,37 @@
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+/* Mobile adjustments (screens up to 768px) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        min-height: auto;
+        max-height: none;
+        width: 95vw;
+        max-width: none;
+    }
+
+    .nested-container {
+        max-width: 90vw;
+        max-height: auto;
+        margin: 0.5rem 0;
+    }
+
+    .hello {
+        max-width: 90vw;
+        padding: 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
 }
 
 .container legend {

@@ -18,7 +18,7 @@ import { flagClasses } from './flags';
 
 const Hello = ({ name, greeting, paragraph, language: langProp }: HelloProps) => {
 
-    const { language: contextLang } = useContext(LanguageContext);
+    const { language: contextLang, showFlags } = useContext(LanguageContext);
     const lang = langProp ?? contextLang; // use prop if provided, otherwise context
     // const greetingText = greeting ?? translations.greeting[language ?? 'EN'];
     // const paragraphText = paragraph ?? translations.paragraph[language ?? 'EN'];
@@ -28,7 +28,7 @@ const Hello = ({ name, greeting, paragraph, language: langProp }: HelloProps) =>
 
     return (
 
-        <fieldset className={`nested-container ${flagClasses[lang]} flag-overlay`}>
+        <fieldset className={`nested-container${showFlags ? ` ${flagClasses[lang]} flag-overlay` : ''}`}>
             <legend>Component Container</legend>
             <h1>{greetingText}, {name}!</h1>
             <p>{paragraphText}</p>
